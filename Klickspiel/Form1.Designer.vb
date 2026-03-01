@@ -22,67 +22,69 @@ Partial Class Form1
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.ToolStrip1.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(230, 209)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Klick mich!!!"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel1, Me.ToolStripLabel2})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(589, 25)
-        Me.ToolStrip1.TabIndex = 1
-        Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'ToolStripLabel1
-        '
-        Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(13, 22)
-        Me.ToolStripLabel1.Text = "0"
-        '
-        'ToolStripLabel2
-        '
-        Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(31, 22)
-        Me.ToolStripLabel2.Text = "2000"
-        '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 1000
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(589, 444)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ToolStrip1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MaximizeBox = False
-        Me.Name = "Form1"
-        Me.ShowIcon = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Verrücktes Klickspiel"
-        Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        components = New ComponentModel.Container()
+        Button1 = New System.Windows.Forms.Button()
+        ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
+        ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
+        Timer1 = New System.Windows.Forms.Timer(components)
+        ToolStrip1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New System.Drawing.Point(268, 241)
+        Button1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        Button1.Name = "Button1"
+        Button1.Size = New System.Drawing.Size(88, 27)
+        Button1.TabIndex = 0
+        Button1.Text = "Klick mich!!!"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' ToolStrip1
+        ' 
+        ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {ToolStripLabel1, ToolStripLabel2})
+        ToolStrip1.Location = New System.Drawing.Point(0, 0)
+        ToolStrip1.Name = "ToolStrip1"
+        ToolStrip1.Size = New System.Drawing.Size(687, 25)
+        ToolStrip1.TabIndex = 1
+        ToolStrip1.Text = "ToolStrip1"
+        ' 
+        ' ToolStripLabel1
+        ' 
+        ToolStripLabel1.Name = "ToolStripLabel1"
+        ToolStripLabel1.Size = New System.Drawing.Size(13, 22)
+        ToolStripLabel1.Text = "0"
+        ' 
+        ' ToolStripLabel2
+        ' 
+        ToolStripLabel2.Name = "ToolStripLabel2"
+        ToolStripLabel2.Size = New System.Drawing.Size(31, 22)
+        ToolStripLabel2.Text = "2000"
+        ' 
+        ' Timer1
+        ' 
+        Timer1.Enabled = True
+        Timer1.Interval = 1000
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New System.Drawing.SizeF(7F, 15F)
+        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        ClientSize = New System.Drawing.Size(687, 512)
+        Controls.Add(Button1)
+        Controls.Add(ToolStrip1)
+        FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
+        MaximizeBox = False
+        Name = "Form1"
+        ShowIcon = False
+        StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Text = "Klickspiel"
+        ToolStrip1.ResumeLayout(False)
+        ToolStrip1.PerformLayout()
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button

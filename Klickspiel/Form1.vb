@@ -1,4 +1,7 @@
-﻿Public Class Form1
+﻿Imports System.Drawing
+Imports System.Windows.Forms
+
+Public Class Form1
 
     Private Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
         Dim rnd As New Random
@@ -7,9 +10,10 @@
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         If Timer1.Interval = 50 Then
-            MsgBox("Glückwunsch, Sie haben es geschafft")
+            MessageBox.Show("Glückwunsch, Sie haben es geschafft")
+            Return
         End If
-        MsgBox("Level up. SCHNELLER!")
+        MessageBox.Show("Level up. SCHNELLER!")
         Timer1.Interval -= 50 : ToolStripLabel1.Text += 50
     End Sub
 End Class
